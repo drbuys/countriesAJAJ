@@ -33,7 +33,7 @@ var createContent = function(countries) {
 
     var countriesLabel = document.createElement('label');
     countriesLabel.setAttribute( 'id', 'countries-dropdown');
-    countriesLabel.innerText = "Some Text";
+    countriesLabel.innerText = "Choose a country:  ";
 
     var countriesSelect = document.createElement('select');
     countriesSelect.setAttribute( 'id', 'country-content');
@@ -89,15 +89,15 @@ var menuChange = function(event) {
 var createCountryInfo = function( country ) {
     var li1 = document.createElement( 'li' );
     li1.setAttribute( 'id', 'li1' );
-    li1.innerText = country.nativeName;
+    li1.innerText = "Country: " + country.nativeName;
 
     var li2 = document.createElement( 'li' );
     li2.setAttribute( 'id', 'li2' );
-    li2.innerText = country.population;
+    li2.innerText = "Population: " + country.population;
 
     var li3 = document.createElement( 'li' );
     li3.setAttribute( 'id', 'li3' );
-    li3.innerText = country.capital;
+    li3.innerText = "Capital: " + country.capital;
     // console.log( li );
 
     var ul = document.getElementById('country-list');
@@ -109,13 +109,13 @@ var createCountryInfo = function( country ) {
 
 var newCountryInfo = function( country ) {
     var li1 = document.getElementById( 'li1' );
-    li1.innerText = country.nativeName;
+    li1.innerText = "Country: " + country.nativeName;
 
     var li2 = document.getElementById( 'li2' );
-    li2.innerText = country.population;
+    li2.innerText = "Population: " + country.population;
 
     var li3 = document.getElementById( 'li3' );
-    li3.innerText = country.capital;
+    li3.innerText = "Capital: " + country.capital;
     // console.log( li );
 
     var ul = document.getElementById('country-list');
